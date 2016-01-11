@@ -4,7 +4,7 @@
   "description": "org website",
   "main": "index.js",
   "scripts": {
-    "start": "node --harmony app.js",
+    "build": "grunt",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
