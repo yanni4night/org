@@ -3,7 +3,7 @@ module.exports = (grunt) ->
     (require 'load-grunt-tasks') grunt
     grunt.initConfig
         clean:
-            all: 'public'
+            all: 'public/**/*'
         copy:
             static:
                 src: 'static/{,*/}*'
@@ -18,7 +18,7 @@ module.exports = (grunt) ->
             all:
                 expand: true
                 cwd: 'source'
-                src: ['{,*/}*.md']
+                src: ['{,**/}*.md']
                 dest: 'public'
                 ext: '.html'
     grunt.registerTask 'default', ['clean', 'copy', 'markdown']
