@@ -8,9 +8,14 @@ module.exports = (grunt) ->
             static:
                 src: 'static/{,*/}*'
                 dest: 'public/'
+            html:
+                expand: true
+                cwd: 'source'
+                src: '**/*.html'
+                dest: 'public/'
         watch:
             scripts:
-                files: ['source/**/*.md', 'template/*.jst', 'static/**/*']
+                files: ['source/**/*', 'template/*.jst', 'static/**/*']
                 tasks: ['default']
         markdown:
             options:
