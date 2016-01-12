@@ -27,6 +27,7 @@
   },
   "devDependencies": {
     "forever": "^0.15.1",
+    "front-matter": "^2.0.5",
     "grunt": "^0.4.5",
     "grunt-contrib-clean": "^0.7.0",
     "grunt-contrib-copy": "^0.8.2",

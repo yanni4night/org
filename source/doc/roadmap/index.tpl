@@ -1,6 +1,8 @@
 {%extends 'doc.jst'%}
 {%block title%}路线图{%endblock%}
 {%block doc%}
+{%set path="roadmap/index"%}
+{%set category="roadmap"%}
         <style>
         .timeline-item {
             background-color: #EFEFEF

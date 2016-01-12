@@ -1,6 +1,8 @@
+fm = require 'front-matter'
 module.exports = (grunt) -> 
     (require 'time-grunt') grunt
     (require 'load-grunt-tasks') grunt
+    lastAttr = null
     grunt.initConfig
         clean:
             all: ['public/**/*']
@@ -25,7 +27,13 @@ module.exports = (grunt) ->
                 tasks: ['default']
         markdown:
             options:
-                template: 'template/markdown.jst'
+                template: 'template/markdown.jst',
+                preCompile: (src, context) =>
+                    content = fm(src)
+                    lastAttr = content.attributes
+                    return content.body
+                postCompile: (src, context) =>
+                    return '{%set path="' + lastAttr.path + '"%}\n{%set category="' + lastAttr.category + '"%}\n' + src
             all:
                 expand: true
                 cwd: 'source'
@@ -44,4 +52,4 @@ module.exports = (grunt) ->
                 src: ['**/*.tpl']
                 dest: 'public'
                 ext: '.html'
-    grunt.registerTask 'default', ['clean', 'copy', 'markdown', 'web_swig', 'clean:tmp']
+    grunt.registerTask 'default', ['clean', 'copy', 'markdown', 'web_swig']
