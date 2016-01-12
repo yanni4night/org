@@ -11,6 +11,14 @@
 <script>$('.lang-sequence').sequenceDiagram({theme:'simple'})</script>
 <script src="/static/js/highlight.pack.js"></script>
 <script> hljs.highlightBlock()</script>
+<script src="/static/js/flowchart.min.js"></script>
+<script>
+$('.lang-flow').each(function(idx, flow){
+    var diagram = flowchart.parse($(flow).text());
+    $(flow).empty();
+    diagram.drawSVG(flow);
+})
+</script>
 {%endblock%}
 
 {%block content%}
