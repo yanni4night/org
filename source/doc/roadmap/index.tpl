@@ -7,7 +7,7 @@
         }
         </style>
         <div class="non-wrapper">
-                <div class="container">
+                <div class="container-fluid">
                 <div class="content-header">
                     <h1>开发路线图</h1>
                 </div>
