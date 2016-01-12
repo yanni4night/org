@@ -1,16 +1,21 @@
-/**
-  * Copyright (C) 2016 tieba.baidu.com
-  * doc.jst
-  *
-  * changelog
-  * 2016-01-12[13:26:56]:revised
-  *
-  * @author yanni4night@gmail.com
-  * @version 1.0.0
-  * @since 1.0.0
-  */
 {%extends 'stub.jst'%}
+
+{%block links%}
+<link rel="stylesheet" href="/static/css/github.css">
+{%endblock%}
+
+{%block scripts%}
+<script src="/static/js/highlight.pack.js"></script>
+<script> hljs.highlightBlock()</script>
+{%endblock%}
+
 {%block content%}
+<style>
+.doc{
+   padding: 10px 30px;
+    font-size: 16px;
+}
+</style>
 <body class="hold-transition skin-purple sidebar-mini">
     <div class="wrapper">
         <header class="main-header">
@@ -31,8 +36,10 @@
             </nav>
         </header>
         <div class="content-wrapper">
-            <div class="container-fluid">{%block doc%}
-                {%endblock%}</div>
+            <div class="container-fluid doc">
+                {%block doc%}
+                {%endblock%}
+            </div>
         </div>
         <aside class="main-sidebar">
             <section class="sidebar" style="height: auto;">
@@ -44,7 +51,8 @@
                         </a>
                         <ul class="treeview-menu">
                             <li class="{%if path=='introduction/index'%}active{%endif%}"><a href="/doc/introduction/index.html"><i class="fa fa-circle-o"></i>介绍</a></li>
-                            <li class="{%if path=='introduction/design'%}active{%endif%}"><a href="/doc/introduction/design.html"><i class="fa fa-circle-o"></i>设计</a></li>
+                            <li class="{%if path=='introduction/howto'%}active{%endif%}"><a href="/doc/introduction/howto.html"><i class="fa fa-circle-o"></i>如何使用</a></li>
+                            <li class="{%if path=='introduction/design'%}active{%endif%}"><a href="/doc/introduction/design.html"><i class="fa fa-circle-o"></i>设计原理</a></li>
                         </ul>
                     </li>
                     <li class="{%if category=='roadmap'%}active{%endif%} treeview">

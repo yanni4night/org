@@ -5,7 +5,7 @@ module.exports = (grunt) ->
     lastAttr = null
     grunt.initConfig
         clean:
-            all: ['public/**/*']
+            all: ['public/**/*', 'tmp']
             tmp: ['tmp']
         copy:
             static:
@@ -27,7 +27,10 @@ module.exports = (grunt) ->
                 tasks: ['default']
         markdown:
             options:
-                template: 'template/markdown.jst',
+                template: 'template/markdown.jst'
+                markdownOptions:
+                    gfm: true
+                    highlight: 'manual'
                 preCompile: (src, context) =>
                     content = fm(src)
                     lastAttr = content.attributes
