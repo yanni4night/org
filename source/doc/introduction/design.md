@@ -19,6 +19,17 @@ Hybrid 信道传递的消息，分为三类：
  3. Native 向 JS-SDK 发送连接建立成功的通知请求；
  4. JS-SDK 向 Native 回复该请求
 
-
+```sequence
+title: Hybrid 握手流程
+Native->NativeSDK: 启动hybrid
+NativeSDK->JsSDK: 发送handshake
+Note right of JsSDK:收到操作系统、客户端版本
+JsSDK->NativeSDK: 回复handshake
+NativeSDK->Native: 通知业务Hybrid已ready
+NativeSDK->JsSDK: 通知连接已建立（handback）
+JsSDK->Webview: 通知业务Hybrid已ready
+Note right of Webview: 收到bridgeReady事件
+Webview-->Native: 请求数据
+```
 
 
