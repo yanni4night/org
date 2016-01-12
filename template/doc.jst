@@ -67,6 +67,17 @@ $('.lang-flow').each(function(idx, flow){
                             <li class="{%if path=='introduction/design'%}active{%endif%}"><a href="/doc/introduction/design.html"><i class="fa fa-circle-o"></i>设计原理</a></li>
                         </ul>
                     </li>
+                    <li class="{%if category=='sdk'%}active{%endif%} treeview">
+                        <a href="#">
+                            <i class="fa fa-folder-o"></i> <span>SDK</span> <i class="fa fa-angle-left pull-right"></i>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li class="{%if path=='sdk/shareCmd'%}active{%endif%}"><a href="/doc/sdk/shareCmd.html"><i class="fa fa-circle-o"></i>shareCmd</a></li>
+                            <li class="{%if path=='sdk/drawLotteryPB'%}active{%endif%}"><a href="/doc/sdk/drawLotteryPB.html"><i class="fa fa-circle-o"></i>drawLotteryPB</a></li>
+                            <li class="{%if path=='sdk/core'%}active{%endif%}"><a href="/doc/sdk/core.html"><i class="fa fa-circle-o"></i>core</a></li>
+                            <li class="{%if path=='sdk/system'%}active{%endif%}"><a href="/doc/sdk/system.html"><i class="fa fa-circle-o"></i>system</a></li>
+                        </ul>
+                    </li>
                     <li class="{%if category=='roadmap'%}active{%endif%} treeview">
                         <a href="#">
                             <i class="fa fa-calendar"></i> <span>计划</span> <i class="fa fa-angle-left pull-right"></i>
