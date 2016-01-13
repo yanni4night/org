@@ -1,6 +1,6 @@
 ---
 category: introduction
-path: introduction/howto
+name: howto
 ---
 
 ### 如何使用？

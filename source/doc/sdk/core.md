@@ -1,6 +1,6 @@
 ---
 category: sdk
-path: sdk/core
+name: core
 ---
 
 ### core

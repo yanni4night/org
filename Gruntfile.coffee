@@ -28,15 +28,12 @@ module.exports = (grunt) ->
         markdown:
             options:
                 template: 'template/markdown.jst'
-                markdownOptions:
-                    gfm: true
-                    highlight: 'manual'
-                preCompile: (src, context) =>
+                preCompile: (src, context) ->
                     content = fm(src)
                     lastAttr = content.attributes
                     return content.body
-                postCompile: (src, context) =>
-                    return '{%set path="' + lastAttr.path + '"%}\n{%set category="' + lastAttr.category + '"%}\n' + src
+                postCompile: (src, context) ->
+                    return '{%block sets%}\n{%set path="' + lastAttr.category + '/' + lastAttr.name + '"%}\n{%set category="' + lastAttr.category + '"%}\n{%endblock%}\n\n' + '{%block doc%}' + src + '{%endblock%}'
             all:
                 expand: true
                 cwd: 'source'

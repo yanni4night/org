@@ -1,6 +1,6 @@
 ---
 category: sdk
-path: sdk/system
+name: system
 ---
 
 ### system

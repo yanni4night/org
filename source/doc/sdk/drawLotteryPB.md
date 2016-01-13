@@ -1,6 +1,6 @@
 ---
 category: sdk
-path: sdk/drawLotteryPB
+name: drawLotteryPB
 ---
 
 ### drawLotteryPB

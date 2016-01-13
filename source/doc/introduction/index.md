@@ -1,6 +1,6 @@
 ---
 category: introduction
-path: introduction/index
+name: index
 ---
 ### 简介
 

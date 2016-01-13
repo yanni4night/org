@@ -1,6 +1,6 @@
 ---
 category: introduction
-path: introduction/design
+name: design
 ---
 
 ### 设计原理

@@ -1,6 +1,6 @@
 ---
 category: sdk
-path: sdk/shareCmd
+name: shareCmd
 ---
 
 ### shareCmd
