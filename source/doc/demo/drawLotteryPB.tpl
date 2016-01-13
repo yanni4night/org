@@ -3,6 +3,10 @@
 
 {%block scripts%}
 <script src="/static/js/demo.js"></script>
+<script src="/static/js/jquery.qrcode.min.js"></script>
+<script>
+    $('#qrcode').qrcode(location.href);
+</script>
 {%endblock%}
 
 {%block sets%}
@@ -16,6 +20,9 @@
     <div class="container-fluid">
         <div class="content-header">
             <h1>drawLotteryPB</h1>
+            <ol class="breadcrumb">
+                <li><a href="#qrcode">二维码</a></li>
+            </ol>
         </div>
         <div class="content">
             <div class="box box-info demo-item" data-api="drawLotteryPB.getInitPageData">
@@ -122,6 +129,7 @@
                   </div><!-- /.box-footer -->
                 </form>
               </div><!--box-->
+        <div id="qrcode"></div>
         </div>
         </div>
     </div>
