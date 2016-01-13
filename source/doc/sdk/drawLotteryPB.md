@@ -1,4 +1,5 @@
 ---
+title: drawLotteryPB
 category: sdk
 name: drawLotteryPB
 ---

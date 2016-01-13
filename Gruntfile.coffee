@@ -33,7 +33,7 @@ module.exports = (grunt) ->
                     lastAttr = content.attributes
                     return content.body
                 postCompile: (src, context) ->
-                    return '{%block sets%}\n{%set path="' + lastAttr.category + '/' + lastAttr.name + '"%}\n{%set category="' + lastAttr.category + '"%}\n{%endblock%}\n\n' + '{%block doc%}' + src + '{%endblock%}'
+                    return '{%block title%}' + lastAttr.title + '{%endblock%}\n\n{%block sets%}\n{%set path="' + lastAttr.category + '/' + lastAttr.name + '"%}\n{%set category="' + lastAttr.category + '"%}\n{%endblock%}\n\n' + '{%block doc%}' + src + '{%endblock%}'
             all:
                 expand: true
                 cwd: 'source'

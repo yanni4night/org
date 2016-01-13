@@ -1,4 +1,5 @@
 ---
+title: shareCmd
 category: sdk
 name: shareCmd
 ---
