@@ -10,7 +10,7 @@
 <script src="/static/js/sequence-diagram-min.js"></script>
 <script>$('.lang-sequence').sequenceDiagram({theme:'simple'})</script>
 <script src="/static/js/highlight.pack.js"></script>
-<script>hljs.highlightBlock()</script>
+<script>$('[class^="lang-"]').each(function(idx,code){hljs.highlightBlock(code)});</script>
 <script src="/static/js/flowchart.min.js"></script>
 <script>
 $('.lang-flow').each(function(idx, flow){
