@@ -23,14 +23,14 @@
                                     </span>
                                 </li>
                                 <li>
-                                    <i class="fa fa-user bg-aqua"></i>
+                                    <i class="fa fa-hourglass-start bg-aqua"></i>
                                     <div class="timeline-item">
                                         <span class="time"><i class="fa fa-clock-o"></i>2015/11/11</span>
                                         <h3 class="timeline-header no-border">项目启动</h3>
                                     </div>
                                 </li>
                                 <li>
-                                    <i class="fa fa-user bg-aqua"></i>
+                                    <i class="fa fa-apple bg-aqua"></i>
                                     <div class="timeline-item">
                                     <span class="time"><i class="fa fa-clock-o"></i>2015/11/26</span>
                                         <h3 class="timeline-header no-border">iOS端开发完成</h3>
@@ -42,7 +42,7 @@
                                     </span>
                                 </li>
                                 <li>
-                                    <i class="fa fa-user bg-aqua"></i>
+                                    <i class="fa fa-android bg-aqua"></i>
                                     <div class="timeline-item">
                                     <span class="time"><i class="fa fa-clock-o"></i>2015/12/22</span>
                                         <h3 class="timeline-header no-border">Android端开发完成</h3>
@@ -54,47 +54,47 @@
                                     </span>
                                 </li>
                                 <li>
-                                    <i class="fa fa-user bg-aqua"></i>
+                                    <i class="fa fa-share bg-aqua"></i>
                                     <div class="timeline-item">
                                     <span class="time"><i class="fa fa-clock-o"></i>2016/1/4</span>
                                         <h3 class="timeline-header no-border">分享API开发完成</h3>
                                     </div>
                                 </li>
                                 <li>
-                                    <i class="fa fa-user bg-aqua"></i>
+                                    <i class="fa fa-file-word-o bg-aqua"></i>
                                     <div class="timeline-item">
                                     <span class="time"><i class="fa fa-clock-o"></i>2016/1/15</span>
                                         <h3 class="timeline-header no-border">文档平台</h3>
                                     </div>
                                 </li>
                                 <li>
-                                    <i class="fa fa-user bg-aqua"></i>
+                                    <i class="fa fa-clock-o bg-grey"></i>
                                     <div class="timeline-item">
                                     <span class="time"><i class="fa fa-clock-o"></i>2016/1/30</span>
                                         <h3 class="timeline-header no-border">iOS 7.2版上线</h3>
                                     </div>
                                 </li>
                                 <li class="time-label">
-                                    <span class="bg-olive">
+                                    <span class="bg-teal">
                                         2016年2月
                                     </span>
                                 </li>
                                 <li>
-                                    <i class="fa fa-user bg-aqua"></i>
+                                    <i class="fa fa-clock-o bg-grey"></i>
                                     <div class="timeline-item">
                                     <span class="time"><i class="fa fa-clock-o"></i>约2016/2/5</span>
                                         <h3 class="timeline-header no-border">抽奖贴API开发</h3>
                                     </div>
                                 </li>
                                 <li>
-                                    <i class="fa fa-user bg-aqua"></i>
+                                    <i class="fa fa-clock-o bg-grey"></i>
                                     <div class="timeline-item">
                                     <span class="time"><i class="fa fa-clock-o"></i>约2016/2/20</span>
                                         <h3 class="timeline-header no-border">Hybrid能力验证页面上线</h3>
                                     </div>
                                 </li>
                                 <li>
-                                    <i class="fa fa-user bg-aqua"></i>
+                                    <i class="fa fa-clock-o bg-grey"></i>
                                     <div class="timeline-item">
                                     <span class="time"><i class="fa fa-clock-o"></i>约2016/2/28</span>
                                         <h3 class="timeline-header no-border">Android 7.2灰度上线</h3>
@@ -106,14 +106,14 @@
                                     </span>
                                 </li>
                                 <li>
-                                    <i class="fa fa-user bg-aqua"></i>
+                                    <i class="fa fa-clock-o bg-grey"></i>
                                     <div class="timeline-item">
                                     <span class="time"><i class="fa fa-clock-o"></i>约2016/3/1</span>
                                         <h3 class="timeline-header no-border">FE模拟开发环境启动开发</h3>
                                     </div>
                                 </li>
                                 <li>
-                                    <i class="fa fa-user bg-aqua"></i>
+                                    <i class="fa fa-clock-o bg-grey"></i>
                                     <div class="timeline-item">
                                     <span class="time"><i class="fa fa-clock-o"></i>约2016/3/3</span>
                                         <h3 class="timeline-header no-border">抽奖贴上线</h3>
