@@ -5,9 +5,13 @@
 <script src="/static/js/demo.js"></script>
 {%endblock%}
 
+{%block sets%}
+    {%set path="demo/drawLotteryPB"%}
+    {%set category="demo"%}
+{%endblock%}
+
 {%block doc%}
-{%set path="demo/drawLotteryPB"%}
-{%set category="demo"%}
+
 <div class="non-wrapper">
     <div class="container-fluid">
         <div class="content-header">
