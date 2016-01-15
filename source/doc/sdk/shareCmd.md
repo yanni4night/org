@@ -25,7 +25,7 @@ TiebaJsBridge.shareCmd.shareByHybrid({
     "desc": "这是分享的描述",
     "iconImgPath": "http://img.org",
     "shareUrl": "http://www.baidu.com"
-}).then(function () {console.log('调起分享成功')}, function () {console.log('调起分享失败')});
+}).then(function () {alert('调起分享成功')}, function () {alert('调起分享失败')});
 ```
 
 #### 备注
