@@ -29,7 +29,7 @@ $(document).ready(function () {
                 try {
                     val = JSON.parse(val);
 
-                    api[0][api[1]](val).then(function (data) {
+                    TiebaJsBridge[api[0]][api[1]](val).then(function (data) {
                         showMsg(JSON.stringify(data));
                     }, function (err) {
                         showMsg(err.message, true);
