@@ -38,10 +38,10 @@
                       <div class="col-sm-10">
                         <textarea class="form-control" id="shareByHybrid" placeholder="请输入一个JSON对象" rows="6">
 {
-    title: '这是分享的标题',
-    desc: '这是分享的描述',
-    iconImgPath: 'http://img.org',
-    shareUrl: 'http://www.baidu.com'
+    "title": "这是分享的标题",
+    "desc": "这是分享的描述",
+    "iconImgPath": "http://img.org",
+    "shareUrl": "http://www.baidu.com"
 }
                         </textarea>
                       </div>

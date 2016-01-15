@@ -9,16 +9,20 @@
  * @version 1.0.0
  * @since 1.0.0
  */
-$(document).ready(function () {
+$(document).on('TiebaJsBridgeReady', function (e) {
+    $('.box-title').toggleClass('bg-red', e.tiebaJsBridge && 'complete' === e.tiebaJsBridge.readyState).toggleClass(
+        'bg-green', e.tiebaJsBridge && 'complete' === e.tiebaJsBridge.readyState);
+}).ready(function () {
     $('.demo-item').each(function (idx, item) {
         var $item = $(item);
         var api = $item.attr('data-api').split('.');
 
         var showMsg = function (msg, fail) {
             $item.find(
-                '.alert').toggleClass('alert-danger', !!fail).toggleClass('alert-info', !fail).show().html('<h4><i class="icon fa fa-' + (fail ? 'ban' : 'info') +
-                '"></i> ' + (fail ?
-                    '出错' : '消息') + '</h4>' + msg);
+                    '.alert').toggleClass('alert-danger', !!fail).toggleClass('alert-info', !fail).show()
+                .html('<h4><i class="icon fa fa-' + (fail ? 'ban' : 'info') +
+                    '"></i> ' + (fail ?
+                        '出错' : '消息') + '</h4>' + msg);
         };
 
         $item.find('form').submit(function (e) {
@@ -38,7 +42,7 @@ $(document).ready(function () {
                     return showMsg(e.message, true);
                 }
             } else {
-                showMsg('链接未建立', true);
+                showMsg('链接未建立:' + (window.TiebaJsBridge && TiebaJsBridge.readyState), true);
             }
         });
     });
