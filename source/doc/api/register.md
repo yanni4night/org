@@ -8,14 +8,14 @@ name: register
 
 #### 功能：
 
-注册API，供 Native 调用。
+>注册API，供 Native 调用。
 
 #### 参数
 
->cmd[string]: API空间
->method[string]: API名称
->func[function]: API函数
->gone[boolean]: 是否立刻返回
+ - cmd[string]: API空间
+ - method[string]: API名称
+ - func[function]: API函数
+ - gone[boolean]: 是否立刻返回
 
 #### 示例
 

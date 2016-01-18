@@ -8,7 +8,7 @@ name: readyState
 
 #### 功能:
 
-属性，获取当前 Hybrid 状态。只有值为 `complete` 时方可使用。
+>属性，获取当前 Hybrid 状态。只有值为 `complete` 时方可使用。
 
 #### 示例：
 

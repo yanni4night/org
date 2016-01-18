@@ -8,7 +8,7 @@ name: version
 
 #### 功能:
 
-属性，获取当前 Hybrid 版本。
+>属性，获取当前 Hybrid 版本。
 
 #### 示例：
 
