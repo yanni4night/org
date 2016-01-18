@@ -1,6 +1,6 @@
 ---
 title: version
-category: TiebaJsBridge
+category: api
 name: version
 ---
 

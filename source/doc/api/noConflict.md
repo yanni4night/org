@@ -1,6 +1,6 @@
 ---
 title: noConflict
-category: TiebaJsBridge
+category: api
 name: noConflict
 ---
 

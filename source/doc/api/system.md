@@ -1,6 +1,6 @@
 ---
 title: system
-category: TiebaJsBridge
+category: api
 name: system
 ---
 
@@ -39,3 +39,7 @@ TiebaJsBridge.system.platform().then(function (platform) {
     alert(platform);// android/ios
 });
 ```
+
+#### 备注
+
+当 TiebaJsBridge.readyState 值不为 `complete` 时，该方法不存在。

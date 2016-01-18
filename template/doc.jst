@@ -63,6 +63,18 @@ $('.lang-flow').each(function(idx, flow){
                             <li class="{%if path=='introduction/design'%}active{%endif%}"><a href="/doc/introduction/design.html"><i class="fa fa-circle-o"></i>设计原理</a></li>
                         </ul>
                     </li>
+                    <li class="{%if category=='api'%}active{%endif%} treeview">
+                        <a href="#">
+                            <i class="fa fa-book"></i> <span>API</span> <i class="fa fa-angle-left pull-right"></i>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li class="{%if path=='api/readyState'%}active{%endif%}"><a href="/doc/api/readyState.html"><i class="fa fa-circle-o"></i>readyState</a></li>
+                            <li class="{%if path=='api/version'%}active{%endif%}"><a href="/doc/api/version.html"><i class="fa fa-circle-o"></i>version</a></li>
+                            <li class="{%if path=='api/noConflict'%}active{%endif%}"><a href="/doc/api/noConflict.html"><i class="fa fa-circle-o"></i>noConflict</a></li>
+                            <li class="{%if path=='api/system'%}active{%endif%}"><a href="/doc/api/system.html"><i class="fa fa-circle-o"></i>system</a></li>
+                            <li class="{%if path=='api/register'%}active{%endif%}"><a href="/doc/api/register.html"><i class="fa fa-circle-o"></i>register</a></li>
+                        </ul>
+                    </li>
                     <li class="{%if category=='sdk'%}active{%endif%} treeview">
                         <a href="#">
                             <i class="fa fa-folder-o"></i> <span>SDK</span> <i class="fa fa-angle-left pull-right"></i>
