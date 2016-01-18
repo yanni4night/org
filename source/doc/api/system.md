@@ -12,7 +12,7 @@ name: system
 
 #### 参数：
 
->无
+无
 
 #### 示例
 
@@ -26,11 +26,11 @@ TiebaJsBridge.system.version().then(function (version) {
 
 #### 功能：
 
-获取客户端操作系统。
+>获取客户端操作系统。
 
 #### 参数：
 
->无
+无
 
 #### 示例
 
