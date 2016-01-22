@@ -129,6 +129,58 @@
                   </div><!-- /.box-footer -->
                 </form>
               </div><!--box-->
+              <div class="box box-info demo-item" data-api="drawLotteryPB.pageFinish">
+                <div class="box-header with-border">
+                  <h3 class="box-title">pageFinish</h3>
+                </div><!-- /.box-header -->
+                <div class="alert alert-info" style="display:none">
+                </div>
+                <!-- form start -->
+                <form class="form-horizontal">
+                  <div class="box-body">
+                    <div class="form-group">
+                      <label for="pageFinish" class="col-sm-2 control-label">请求体</label>
+                      <div class="col-sm-10">
+                        <textarea class="form-control" id="pageFinish" placeholder="请输入一个JSON对象" rows="6">
+{
+    
+}
+                        </textarea>
+                      </div>
+                    </div>
+                  </div><!-- /.box-body -->
+                  <div class="box-footer">
+                    <button type="reset" class="btn btn-default">Reset</button>
+                    <button type="submit" class="btn btn-info pull-right">请求</button>
+                  </div><!-- /.box-footer -->
+                </form>
+              </div><!--box-->
+              <div class="box box-info demo-item" data-api="drawLotteryPB.drawFinish">
+                <div class="box-header with-border">
+                  <h3 class="box-title">drawFinish</h3>
+                </div><!-- /.box-header -->
+                <div class="alert alert-info" style="display:none">
+                </div>
+                <!-- form start -->
+                <form class="form-horizontal">
+                  <div class="box-body">
+                    <div class="form-group">
+                      <label for="drawFinish" class="col-sm-2 control-label">请求体</label>
+                      <div class="col-sm-10">
+                        <textarea class="form-control" id="drawFinish" placeholder="请输入一个JSON对象" rows="6">
+{
+    
+}
+                        </textarea>
+                      </div>
+                    </div>
+                  </div><!-- /.box-body -->
+                  <div class="box-footer">
+                    <button type="reset" class="btn btn-default">Reset</button>
+                    <button type="submit" class="btn btn-info pull-right">请求</button>
+                  </div><!-- /.box-footer -->
+                </form>
+              </div><!--box-->
         <div id="qrcode"></div>
         </div>
         </div>
