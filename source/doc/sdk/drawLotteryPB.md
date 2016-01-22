@@ -85,3 +85,40 @@ TiebaJsBridge.drawLotteryPB.toAwardListPage()
     .then(function () {}, function () {alert('跳转失败')});
 
 ```
+
+-----
+
+### toAwardListPage
+
+#### 功能：
+
+>通知页面已渲染完毕。
+
+#### 参数：
+
+待定
+
+#### 示例：
+
+```javascript
+TiebaJsBridge.drawLotteryPB.toAwardListPage();
+```
+
+-----
+
+### drawFinish
+
+#### 功能：
+
+>通知已抽奖完毕。
+
+#### 参数：
+
+待定
+
+#### 示例：
+
+```javascript
+TiebaJsBridge.drawLotteryPB.drawFinish();
+```
+
