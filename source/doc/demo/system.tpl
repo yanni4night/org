@@ -1,5 +1,5 @@
 {%extends 'doc.jst'%}
-{%block title%}shareCmd DEMO{%endblock%}
+{%block title%}system DEMO{%endblock%}
 
 {%block scripts%}
 <script src="/static/js/demo.js"></script>
@@ -18,7 +18,7 @@
 <div class="non-wrapper">
     <div class="container-fluid">
         <div class="content-header">
-            <h1>shareCmd</h1>
+            <h1>system</h1>
             <ol class="breadcrumb">
                 <li><a href="#qrcode">二维码</a></li>
             </ol>
@@ -38,7 +38,7 @@
                       <div class="col-sm-10">
                         <textarea class="form-control" id="copyToClipboard" placeholder="请输入一个JSON对象" rows="6">
 {
-
+    "message": "Hello World"
 }
                         </textarea>
                       </div>
