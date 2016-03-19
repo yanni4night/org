@@ -1,3 +1,4 @@
+___deprecated___
 # org
 
 官网模板
